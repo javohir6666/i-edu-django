@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- ======= Our Team Section ======= -->
+<section id="team" class="team">
+  <div class="container">
+    <div class="section-title">
+      <h2>Bizning jamoa!</h2>
+      <p></p>
+    </div>
+
+    <div class="row">
+      {% for i in Team %}
+      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="member">
+          <div class="pic">
+            {% if i.image %}
+            <img
+              src="{{ i.image.url }}"
+              class="img-fluid"
+              data-src="{{ i.image_image.url }}"
+              alt="{{i.name}} {{i.surname}}"
+            />
+            {% endif %}
+          </div>
+          <div class="member-info">
+            <h4>{{i.name}} {{i.surname}}</h4>
+            <span>{{i.position}}</span>
+            <div class="social">
+              <a href="{{i.twitter}}"><i class="icofont-twitter"></i></a>
+              <a href="{{i.facebook}}"><i class="icofont-facebook"></i></a>
+              <a href="{{i.instagram}}"><i class="icofont-instagram"></i></a>
+              <a href="{{i.linkedin}}"><i class="icofont-linkedin"></i></a>
+              <a href="{{i.telegram}}"><i class="icofont-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Our Team Section -->
+
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- ======= Project Section ======= -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Proyektlar</h2>
+    </div>
+
+    <div class="row">
+      {% for i in project %}
+      <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+        {% if i.image %}
+        <img
+          src="{{ i.image.url }}"
+          class="rounded-circle"
+          ,
+          height="120"
+          ,
+          data-src="{{ i.image_image.url }}"
+          alt="{{i.name}} {{i.surname}}"
+        />
+        {% endif %}
+        <br />
+        <br />
+        <h4 class="title"><a href="{{ i.website }}">{{i.ProjectName}}</a></h4>
+        <p class="description">{{i.ProjectDesc|safe}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Projects Section -->
+
+{% endblock content %}

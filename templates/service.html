@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- ======= Our Team Section ======= -->
+<section id="team" class="team">
+  <div class="container">
+    <div class="section-title">
+      <h2>Bizning xizmatlar!</h2>
+      <p></p>
+    </div>
+
+    <div class="row">
+      {% for i in service %}
+      <div class="col-md-6">
+
+        <article class="card mb-4">
+          <header class="card-header">
+            <div class="card-meta">
+              {% comment %} <time class="timeago" datetime="2021-09-26 20:00" timeago-id="1">{{i.add_time}}</time> {% endcomment %}
+            </div>
+            <a href="post-image.html">
+              <h4 class="card-title">{{i.title}}</h4>
+            </a>
+          </header>
+          <a href="post-image.html">
+            {% if i.image %}
+            <img class="card-img" src="{{ i.image.url }}" alt="">
+            {% endif %}
+          </a>
+          <div class="card-body">
+            <p class="card-text">{{i.desc|safe}}</p>
+          </div>
+        </article><!-- /.card -->
+
+      </div>   
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Our Team Section -->
+
+{% endblock content %}
