@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}I-EDU GROUP | {{Page.title|slice:25}}{% endblock %}
+{% block description %}{{Page.seo_desc}}{% endblock description %}
+{% block keywords %}{{ Page.seo_keywords }}{% endblock keywords %}
 {% block content %}
 <section id="services" class="services">
     <div class="container">
