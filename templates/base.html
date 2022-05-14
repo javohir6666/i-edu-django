@@ -9,7 +9,18 @@
           <title>{% block title %}{% endblock %}</title>
           <meta  name="description" content="{% block description %}{% endblock %}" >
           <meta  name="keywords" content="{% block keywords %}{% endblock %}" >
-        
+          <meta name="twitter:title" content=" {% block twititle %}{% endblock %} " />
+          <meta name="twitter:site" content="@i-edu_uz" />
+          <meta name="twitter:image" content="https://i-edu.uz/uploads/img/service/traditional-to-enterprise-seo-6229f8159834d-sej.png" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content="{% block twitterdesc %}{% endblock %}" /> 
+          <meta property="og:image" content="/uploads/img/service/traditional-to-enterprise-seo-6229f8159834d-sej.png" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="{% block ogtitle %}{% endblock %}" />
+          <meta property="og:description" content="{% block ogdesc %}{% endblock %}" />
+          <meta property="og:url" content="https://i-edu.uz" />
+          <meta property="og:site_name" content="I-EDU GROUP" /> 
+         
           <!-- Favicons -->
           <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
           <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
