@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
-{% block title %}I-EDU GROUP | Bog'lanish{% endblock %}
+{% block title %}I-EDU GROUP | {% trans "Bog'lanish" %}{% endblock %}
 {% block description %}I-EDU GROUP kompaniyasi bilan bog'lanish bo'limi. Sizni qiziqtirgan ma'lumotlarga javob olish uchun biz bilan bog'laning{% endblock description %}
 {% block keywords %}I-EDU GROUP, bog'lanish',contact, seo, meta tags, moodle, seo analytics, publication, science,{% endblock keywords %}
 {% block twititle %}I-EDU GROUP | Bog'lanish{% endblock twititle %}
@@ -14,7 +15,7 @@
         <div class="container">
   
           <div class="section-title">
-            <h2>Biz bilan bog'lanish</h2>
+            <h2>{% trans "Biz bilan bog'lanish" %}</h2>
           </div>
   
           <div class="row">
@@ -22,7 +23,7 @@
             <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
               <div class="info-box">
                 <i class="bx bx-map"></i>
-                <h3>Bizning manzil</h3>
+                <h3>{% trans "Bizning manzil" %}</h3>
                 <p>A108 Adam Street, New York, NY 535022</p>
               </div>
             </div>
@@ -38,7 +39,7 @@
             <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
               <div class="info-box ">
                 <i class="bx bx-phone-call"></i>
-                <h3>Telefon:</h3>
+                <h3>{% trans "Telefon" %}:</h3>
                 <p>+998 97 450-16-77<br>+998 97 450-16-77</p>
               </div>
             </div>
@@ -47,7 +48,7 @@
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="form-row">
                   <div class="col-lg-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Ismingiz" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="name" class="form-control" id="name" placeholder="{% trans "Ismingiz" %}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
                   </div>
                   <div class="col-lg-6 form-group">
@@ -56,19 +57,19 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Mavzu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="{% trans "Mavzu" %}" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Xabar"></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="{% trans "Please write something for us" %}" placeholder="{% trans "Xabar" %}"></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Sizning habaringiz yuborildi. Tez orada siz bilan bog'lanamiz!</div>
+                  <div class="sent-message">{% trans "Sizning habaringiz yuborildi. Tez orada siz bilan bog'lanamiz!" %}</div>
                 </div>
-                <div class="text-center"><button type="submit">Xabar yuborish</button></div>
+                <div class="text-center"><button type="submit">{% trans "Xabar yuborish" %}</button></div>
               </form>
             </div>
   

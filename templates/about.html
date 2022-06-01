@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}I-EDU GROUP | Biz haqimizda{% endblock %}
+{% load i18n %}
+
+{% block title %}I-EDU GROUP | {% trans "Biz haqimizda" %}{% endblock %}
 {% block description %}I-EDU GROUP kompaniyasi haqida ma'lumot bo'limi. Sizni qiziqtirgan ma'lumotlarga javob olish uchun biz bilan bog'laning{% endblock description %}
 {% block keywords %}I-EDU GROUP, seo, meta tags, moodle, seo analytics, publication, science,{% endblock keywords %}
-{% block twititle %}I-EDU GROUP | Biz haqimizda{% endblock twititle %}
-{% block ogtitle %}I-EDU GROUP | Biz haqimizda{% endblock ogtitle %}
+{% block twititle %}I-EDU GROUP | {% trans "Biz haqimizda" %}{% endblock twititle %}
+{% block ogtitle %}I-EDU GROUP | {% trans "Biz haqimizda" %}{% endblock ogtitle %}
 {% block twitterdesc %}I-EDU GROUP kompaniyasi haqida ma'lumot bo'limi. Sizni qiziqtirgan ma'lumotlarga javob olish uchun biz bilan bog'laning{% endblock twitterdesc %}
 {% block ogdesc %}I-EDU GROUP kompaniyasi haqida ma'lumot bo'limi. Sizni qiziqtirgan ma'lumotlarga javob olish uchun biz bilan bog'laning{% endblock ogdesc %}
 {% block content %}
@@ -22,8 +24,7 @@
             <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
   
               <div class="section-title">
-                <h2>Biz haqimizda</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+                <h2>{% trans "Biz haqimizda" %}</h2>
               </div>
   
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">

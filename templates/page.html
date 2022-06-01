@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block title %}I-EDU GROUP | {{Page.title|slice:25}}{% endblock %}
 {% block description %}{{Page.seo_desc}}{% endblock description %}
 {% block keywords %}{{ Page.seo_keywords }}{% endblock keywords %}
@@ -14,7 +15,7 @@
         <h2>{{ Page.title }}</h2>
       </div>
 
-      {{Page.description}}
+      {{Page.description|safe}}
 
     </div>
 </section> 

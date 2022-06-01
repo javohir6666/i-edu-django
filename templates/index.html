@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}I-EDU GROUP | Bosh saxifa{% endblock %}
+{% load i18n %}
+{% block title %}I-EDU GROUP | {% trans "Bosh saxifa" %}{% endblock %}
 {% block description %}I-EDU GROUP kompaniyasi sizlarga qulaylik yaratadi.{% endblock description %}
 {% block keywords %}seo,seo analytics, moodle, moodle tizimi, science, adti, jspi{% endblock keywords %}
-{% block twititle %}I-EDU GROUP | Bosh saxifa{% endblock twititle %}
-{% block ogtitle %}I-EDU GROUP | Bosh saxifa{% endblock ogtitle %}
+{% block twititle %}I-EDU GROUP | {% trans "Bosh saxifa" %}{% endblock twititle %}
+{% block ogtitle %}I-EDU GROUP | {% trans "Bosh saxifa" %}{% endblock ogtitle %}
 {% block twitterdesc %}I-EDU GROUP kompaniyasi sizlarga qulaylik yaratadi.{% endblock twitterdesc %}
 {% block ogdesc %}I-EDU GROUP kompaniyasi sizlarga qulaylik yaratadi.{% endblock ogdesc %}
 {% block content %}
@@ -22,9 +23,9 @@
           <div class="carousel-item active" style="background-image: url('{% static 'assets/img/slide/slide-1.jpg' %}');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Moodle <span>tizimi</span></h2>
-                <p class="animated fadeInUp">Onlayn ta'limni tashkil etish xizmati</p>
-                <a href="{% url 'service' %}" class="btn-get-started animated fadeInUp scrollto">Batafsil</a>
+                <h2 class="animated fadeInDown">{% trans "Moodle tizimi" %}</h2>
+                <p class="animated fadeInUp">{% trans "Onlayn ta'limni tashkil etish xizmati" %}</p>
+                <a href="{% url 'service' %}" class="btn-get-started animated fadeInUp scrollto">{% trans "Batafsil" %}</a>
               </div>
             </div>
           </div>
@@ -33,10 +34,10 @@
           <div class="carousel-item" style="background-image: url('{% static 'assets/img/slide/slide-2.jpg' %}');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">SEO</h2>
-                <p class="animated fadeInUp"> Sayt qidiruv tizimini optimallashtirish</p>
+                <h2 class="animated fadeInDown">{% trans "SEO" %}</h2>
+                <p class="animated fadeInUp"> {% trans "Sayt qidiruv tizimini optimallashtirish" %}</p>
                 <p class="animated fadeInUp">Veb-saytlarni optimallashtirish har qanday Internet-resurs uchun zarur rivojlanish yo'nalishi hisoblanadi. Bugungi kunda veb-sahifalar soni juda katta va shuning uchun raqobat juda yuqori. Bularning barchasi potentsial mijozga murojaat qilish tobora qiyinlashishiga olib keladi. SEO qidiruv tizimlarida saytni targ'ib qilishga qaratilgan chora-tadbirlar majmuini anglatadi.</p>
-                <a href="{% url 'service' %}" class="btn-get-started animated fadeInUp scrollto">Batafsil</a>
+                <a href="{% url 'service' %}" class="btn-get-started animated fadeInUp scrollto">{% trans "Batafsil" %}</a>
               </div>
             </div>
           </div>
@@ -45,9 +46,9 @@
           <div class="carousel-item" style="background-image: url('{% static 'assets/img/slide/slide-3.jpg' %}');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animated fadeInDown">Science publication</h2>
+                <h2 class="animated fadeInDown">{% trans "Science publication" %}</h2>
                 <p class="animated fadeInUp">«Scopus» va «Web of science»da ilmiy maqolalar chop etish xizmati.</p>
-                <a href="{% url 'service' %}" class="btn-get-started animated fadeInUp scrollto">Batafsil</a>
+                <a href="{% url 'service' %}" class="btn-get-started animated fadeInUp scrollto">{% trans "Batafsil" %}</a>
               </div>
             </div>
           </div>
@@ -56,11 +57,11 @@
 
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="sr-only">{% trans "Previous" %}</span>
         </a>
         <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class="sr-only">{% trans "Next" %}</span>
         </a>
 
       </div>
@@ -75,46 +76,24 @@
     <section class="about-lists">
       <div class="container">
         <div class="section-title">
-          <h2>Xizmatlarimiz</h2>
+          <h2>{% trans "Xizmatlarimiz" %}</h2>
         </div>
         <div class="row no-gutters">
 
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
-            <span>Moodle</span>
-            <h4>Onlayn ta'lim platformasi</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+            <span>{% trans "Moodle" %}</span>
+            <h4>{% trans "Onlayn ta'lim platformasi" %}</h4>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
-            <span>SEO</span>
-            <h4>Sayt qidiruv tizimini optimallashtirish </h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+            <span>{% trans "SEO" %}</span>
+            <h4>{% trans "Sayt qidiruv tizimini optimallashtirish" %} </h4>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
-            <span>Science publication</span>
-            <h4>«Scopus» va «Web of science»da ilmiy maqolalar chop etish xizmati</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+            <span>{% trans "Science publication" %}</span>
+            <h4>{% trans "«Scopus» va «Web of science»da ilmiy maqolalar chop etish xizmati" %}</h4>
           </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="400">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="500">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
         </div>
 
       </div>
@@ -130,7 +109,7 @@
             <div class="count-box">
               <i class="icofont-simple-smile" style="color: #20b38e;"></i>
               <span data-toggle="counter-up">232</span>
-              <p>Mijozlar</p>
+              <p>{% trans "Mijozlar" %}</p>
             </div>
           </div>
 
@@ -138,7 +117,7 @@
             <div class="count-box">
               <i class="icofont-document-folder" style="color: #c042ff;"></i>
               <span data-toggle="counter-up">521</span>
-              <p>Proyektlar</p>
+              <p>{% trans "Proyektlar" %}</p>
             </div>
           </div>
 
@@ -146,7 +125,7 @@
             <div class="count-box">
               <i class="icofont-live-support" style="color: #46d1ff;"></i>
               <span data-toggle="counter-up">1,463</span>
-              <p>Qo'llab-quvvatlash soatlari</p>
+              <p>{% trans "Qo'llab-quvvatlash soatlari" %}</p>
             </div>
           </div>
 
@@ -154,7 +133,7 @@
             <div class="count-box">
               <i class="icofont-users-alt-5" style="color: #ffb459;"></i>
               <span data-toggle="counter-up">15</span>
-              <p>Professional mutaxasisslar</p>
+              <p>{% trans "Professional mutaxasisslar" %}</p>
             </div>
           </div>
 
